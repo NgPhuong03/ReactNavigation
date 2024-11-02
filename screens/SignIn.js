@@ -38,6 +38,7 @@ export default SignIn = ({navigation}) => {
                     <TextInput
                         style={styles.Input}
                         value={password}
+                        secureTextEntry={true}
                         onChangeText={setPassword}
                         placeholder='Password'/>
                 </View>

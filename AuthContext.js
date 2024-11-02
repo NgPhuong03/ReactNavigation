@@ -9,7 +9,7 @@ const MyProvider = ({ children }) => {
     const [isAuthenticated, setAuthenticated] = useState(false);
     // '22521159@gm.uit.edu.vn'
     const LogIn = ( email, password) => {
-        if ( email === '1' && password === '123'){
+        if ( email === '22521159@gm.uit.edu.vn' && password === 'donguyenphuong'){
             setAuthenticated(true);
         } else {
             Alert.alert('Incorrect email or password.','','');
@@ -19,13 +19,10 @@ const MyProvider = ({ children }) => {
     const LogOut = () => {
         setAuthenticated(false);
     }
-
-
     return (
         <AuthContext.Provider value={{ isAuthenticated , LogIn, LogOut}}>
             {children}
         </AuthContext.Provider>
     );
 };
-
 export { AuthContext, MyProvider };

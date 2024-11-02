@@ -7,7 +7,6 @@ import Favourites from '../screens/Favourites';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const MainBottom = createBottomTabNavigator();
-
 export default BottomNavigation = () => {
   return (
     <MainBottom.Navigator screenOptions={{headerShown: false, tabBarLabelStyle: {fontSize:12}}} >
@@ -32,7 +31,6 @@ export default BottomNavigation = () => {
     </MainBottom.Navigator>
   )
 }
-
 const styles = StyleSheet.create({
     soluong:{
         position: 'absolute',
